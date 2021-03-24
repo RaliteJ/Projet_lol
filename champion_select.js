@@ -10,7 +10,7 @@ for (let i=1;i<155;i++){
     b.setAttribute("type", "image");
     b.setAttribute("id", i);
     b.setAttribute("alt" ,"Login");
-    b.setAttribute("src" ,"Champions - League of Legends_fichiers/ ("+i+").jpg");
+    b.setAttribute("src" ,"Champions - League of Legends_fichiers/("+i+").jpg");
     b.addEventListener("click", react);
     game.appendChild(b);
 

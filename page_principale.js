@@ -27,11 +27,9 @@ if (localStorage.getItem('id_champ_selct')!= 'None' ){
     
     for (let i=1;i<6;i++){
         let marty = document.getElementById('icone_player_'+i)
-        marty.setAttribute("src" ,"Champions - League of Legends_fichiers/ ("+localStorage.getItem('id_icone'+i)+").jpg");
+        marty.setAttribute("src" ,"Champions - League of Legends_fichiers/("+localStorage.getItem('id_icone'+i)+").jpg");
     }
 }
-
-localStorage.setItem('id_champ_selct', 'None');
 
 let caribou = []
 let requestURL = 'http://ddragon.leagueoflegends.com/cdn/11.6.1/data/en_US/champion.json';
@@ -42,8 +40,18 @@ request.send();
 request.onload = function() {
     for (let [cle] of Object.entries(request.response.data)){
         caribou.push(`${String(cle)}`)
-      }
-      console.log((request.response.data[caribou[0]]).key)
+        }
+
+    if (localStorage.getItem('id_champ_selct')!= 'None' ){
+        for (let i=1;i<6;i++){
+            let partty = document.getElementById(i)
+            partty.innerHTML= String((request.response.data[caribou[(localStorage.getItem('id_icone'+i))-1]]).tags)
+        }
+    }
+    localStorage.setItem('id_champ_selct', 'None');
   }
+
+// let partty = document.getElementById('122')
+//  partty.innerHTML= 'dd'
 
 
