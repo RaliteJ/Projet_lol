@@ -6,3 +6,16 @@ img[type='image'] {
 img[type='image'] {
     width: 50px;
 }
+img[type='im'] {
+    width: 55px;
+}
+img[type='im'] {
+    margin-top: 1.1rem;
+}
+.all{display: flex;flex-direction: row ;}
+
+.team1 {display: flex;background-color: #0AF;flex-direction: column ;}
+
+.team2{ display:flex;background-color: #0AF;flex-direction: column ;}
+
+.logos{display:flex; background-color: #0FA ;flex-direction: column ;}

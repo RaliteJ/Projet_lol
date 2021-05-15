@@ -1,0 +1,5 @@
+1.Faire pour les deux cotés ,images ect
+2.systeme de connexion , sql , systeme de forum ebn plus pour les counters ect , 
+3.Matchups , ordi (classe)
+4.Matchups , players(Forum)
+5.conseil team ect
